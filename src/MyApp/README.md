@@ -9,3 +9,10 @@ dotnet ef dbcontext scaffold \
     Npgsql.EntityFrameworkCore.PostgreSQL -o Models -f -c MyDbContext \
     --project src/MyApp
 ```
+
+# Migrations
+
+```
+dotnet ef migrations add init --project src/MyApp
+dotnet ef database update     --project src/MyApp
+```
