@@ -14,6 +14,9 @@ wk-send-command --command query --user MyUser --password MyPassword --database M
     --sql  "SELECT data #> '{a,b,1}' FROM jsonb_example"
 
 wk-send-command --command query --user MyUser --password MyPassword --database MyDb \
+    --sql  "SELECT * FROM jsonb_example"
+
+wk-send-command --command query --user MyUser --password MyPassword --database MyDb \
     --sql "SELECT * FROM jsonb_example WHERE data['a']['b'][1] = '\"render\"'"
 
 wk-send-command --command execute --user MyUser --password MyPassword --database MyDb \
