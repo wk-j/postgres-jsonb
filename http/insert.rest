@@ -1,0 +1,4 @@
+GET http://localhost:5248/api/join/insert
+
+###
+GET http://localhost:5248/api/join/join
